@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div align="center" class="jumbotron">
+  <h1>CONCERTAR UNA TUTORIA</h1>
+  <form action="http://localhost:8080/servletJDBC_war_exploded/NuevaTutoria-Servlet" method="post">
+
+    <div class="form-group" style="width: 500px;">
+      <label>Matricula del alumno</label>
+      <input type="text" name="id_alumno" size="60" placeholder="Alumno:">
+    </div>
+    <br>
+
+    <select size="1" name="nombreProfesor">
+    <option>Fabiola Durán Villas</option>
+    <option>Hugo José Montes</option>
+    <option>Arely Milán López</option>
+    </select>
+    <br>
+    <br>
+
+
+      <select size="1" name="dia">
+        <option selected>Dia...</option>
+        <option>Lunes</option>
+        <option>Miercoles</option>
+        <option>Jueves</option>
+      </select>
+
+    <br>
+    <label>Hora: </label>
+    &nbsp;
+    <input type="radio" name="hora" value="10">
+    10
+    &nbsp;
+    <input type="radio" name="hora" value="12">
+    12
+    &nbsp;
+    <input type="radio" name="hora" value="16">
+    16
+    &nbsp;
+    <input type="radio" name="hora" value="18">
+    18
+    <br>
+    <br>
+    <label>Asunto de la tutoria</label>
+    <br>
+    <textarea name="asunto" rows="5" cols="40" wrap></textarea>
+    <br>
+    <br>
+    <button type="submit" value="Enviar datos" class="btn btn-primary">Submit</button>
+    <button type="reset" class="btn btn-danger">Reset</button>
+  </form>
+  <br>
+  <a class="btn btn-warning" href="/servletJDBC_war_exploded/index.jsp" role="button">Ver tutorias</a>
+</div>
+</body>
+</html>
